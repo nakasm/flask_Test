@@ -1,0 +1,10 @@
+#my-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(182, 168, 194);
+}
+#message-container{
+    min-height: 75vh;
+    min-width: 75vw;
+}
+

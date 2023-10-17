@@ -9,20 +9,18 @@
 </head>
 <body>
     <div id="my-container">
-        <div id="message-container">
-        <h1>samle HTML</h1>
-        <ul>
-            {% for list in lists %}
-            <li>{{list, loop.index}}</li>
-            {% endfor %}
-        </ul>
+        <div id="post-container">
+            <h1>samle HTML</h1>
+            <ul>
+                {% for list in lists %}
+                <li>{{list, loop.index}}</li>
+                {% endfor %}
+            </ul>
         </div>
-        <div class="row">
-            <div class="col-4">
-                <input id="inputmsg" class="form-control">
-            </div>
-            <div class="col-4">
-                <button id="inputbtn" type="button" class="btn btn-outline-primary">テスト</button>
+        <div id="send-container">
+            <div class="d-flex justify-content-center">
+                <input id="sendmsg" class="form-control">
+                <button id="sendbtn">◆</button>
             </div>
         </div>
     </div>

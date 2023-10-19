@@ -11,11 +11,7 @@
     <div id="my-container">
         <div id="post-container">
             <h1>samle HTML</h1>
-            <ul>
-                {% for list in lists %}
-                <li>{{list, loop.index}}</li>
-                {% endfor %}
-            </ul>
+            <ul id="messages"></ul>
         </div>
         <div id="send-container">
             <div class="d-flex justify-content-center">
@@ -24,5 +20,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

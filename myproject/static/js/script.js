@@ -15,7 +15,7 @@ sendBtnElement.addEventListener('click', function(){
 
 // サーバからクライアントに送信
 socket.on("message", function(message){
-    var listMsgElement = document.createElement("li")
+    var listMsgElement = document.createElement("p")
     listMsgElement.appendChild(document.createTextNode(message));
     postMsgElement.appendChild(listMsgElement);
 })

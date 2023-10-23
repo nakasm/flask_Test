@@ -4,14 +4,25 @@
     background-color: #9d9b9b;
 }
 #post-container{
-    overflow: auto;/* スクロールを効かせつつ、メッセージがタイムラインの外に出ないようにする */
-    height:90%;/*テキストエリアが下に張り付く様にする*/
+    overflow: auto;
+    height:90%;
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2) inset;/*ヘッダーの下に影を入れる*/
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2) inset;
 }
+#message-box p{
+    width: 30%;
+    height: 10%;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #2f3236;
+    background: #e7e8ee;
+    border: solid 3px #7c8692;
+    border-radius: 10px;
+    }
 #send-container{
-    height:10%;/*テキストエリアが下に張り付く様にする*/
+    height:10%;
     border-right: 1px solid #ddd;
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -30,5 +41,5 @@
     border-radius: 50%;
     color: #1f1e1e;
     text-align: center;
-  }
+}
 

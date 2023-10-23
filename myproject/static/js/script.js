@@ -8,12 +8,15 @@ var postMsgElement = document.getElementById("messages")
 
 // sendbtnクリックイベント
 sendBtnElement.addEventListener('click', function(){
-    // クライアントからサーバに送信
+     // ユーザーが送信ボタンをクリックすると上記のイベントリスナーが呼び出される
+     // クライアントからサーバーに "message" イベントが送信される
     socket.emit("message", sendMsgElement.value)
     sendMsgElement.value = ""
 })
 
-// サーバからクライアントに送信
+// サーバーから受信した "message" に対するクライアント側の処理
+// クライアント側のJavaScriptは、socket.on('message', function(message)) 
+// を使用し、サーバーからの "message" を待機
 socket.on("message", function(message){
     var listMsgElement = document.createElement("p")
     listMsgElement.appendChild(document.createTextNode(message));

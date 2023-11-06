@@ -9,8 +9,10 @@
 </head>
 <body>
     <div id="my-container">
-        <div id="post-container">
+        <div id="chat-container">
             <h1>samle HTML</h1>
+        </div>
+        <div id="post-container">
             <div id="message-box">
                 <ul id="messages"></ul>
             </div>
@@ -22,6 +24,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
